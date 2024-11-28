@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.sudoku-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 2px;
+    margin: 20px 0;
+}
+
+.sudoku-grid input {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sudoku-grid input:focus {
+    background-color: #eaf4fc;
+    border-color: #007bff;
+}
+
+.sudoku-grid input[readonly] {
+    background-color: #ccc;
+    color: #333;
+    font-weight: bold;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    transform: scale(1.05);
+}
+
+#check-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#reset-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+#new-game-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.hint-btn {
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.hint-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.hint-btn:hover {
+    background-color: #f7f9fc;
+    border-color: #007bff;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
